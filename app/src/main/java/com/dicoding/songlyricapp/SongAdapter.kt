@@ -24,7 +24,7 @@ class SongAdapter(private val listSong: ArrayList<Song>) : RecyclerView.Adapter<
 
         Glide.with(holder.itemView.context)
             .load(song.thumbnail)
-            .transform(CenterCrop(),RoundedCorners(16))
+            .transform(CenterCrop(),RoundedCorners(20))
             .into(holder.imgThumbnail)
 
         holder.tvAlbum.text = song.album
