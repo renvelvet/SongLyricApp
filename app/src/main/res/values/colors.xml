@@ -12,4 +12,6 @@
     <color name="colorPrimaryDark">#12192C</color>
     <color name="colorPrimaryLight">#1CA54F</color>
     <color name="colorAccent">#E88F9B</color>
+    <color name="lyric_color">#C0D4DD</color>
+    <color name="fav_icon_tint">#BC7171</color>
 </resources>
