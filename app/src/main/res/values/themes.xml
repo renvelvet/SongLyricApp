@@ -16,8 +16,8 @@
     </style>
     
     <style name="TextAppearance.App.Headline6" parent="TextAppearance.MaterialComponents.Headline6">
-        <item name="fontFamily">@font/bunch_blossoms</item>
-        <item name="android:fontFamily">@font/bunch_blossoms</item>
+        <item name="fontFamily">@font/gotham_book</item>
+        <item name="android:fontFamily">@font/gotham_book</item>
     </style>
 
     <!-- ToolBar -->

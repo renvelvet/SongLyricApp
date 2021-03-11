@@ -4,4 +4,8 @@
     <string name="song_title">Song Title</string>
     <string name="rating">Rating</string>
     <string name="song_lyric">Lyric</string>
+    <string name="about_app">About App</string>
+    <string name="about_desc">This app is tribute to everyone who amazed by Sasha Sloan\'s song writing\n\n"About Singer: \nAlexandra Artourovna Yatchenko (born March 11, 1995), known professionally as Sasha Sloan, is a Russian-American singer and songwriter based in Los Angeles, California. (Source: Wikipedia)</string>
+    <string name="my_profile">Resha Puspita Dewi\nEmail: a0020056@bangkit.academy</string>
+    <string name="about_developer">About Developer</string>
 </resources>
