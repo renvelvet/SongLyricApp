@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="50dp"
-    android:background="@color/colorPrimary">
+    android:background="@color/colorPrimary"
+    android:paddingBottom="50dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -13,6 +13,7 @@
         tools:context=".SongLyricActivity">
 
         <ImageView
+            tools:ignore="ContentDescription"
             android:id="@+id/container"
             android:layout_width="0dp"
             android:layout_height="150dp"
@@ -31,14 +32,14 @@
             android:layout_height="85dp"
             android:layout_marginStart="32dp"
             android:layout_marginTop="32dp"
-            android:layout_marginBottom="32dp"
             android:scaleType="centerCrop"
             android:transitionName="tn_thumbnail"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.013"
-            app:srcCompat="@drawable/album_loser" />
+            app:srcCompat="@drawable/album_loser"
+            tools:ignore="ContentDescription" />
 
         <TextView
             android:id="@+id/title"
@@ -61,8 +62,8 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
-            android:text="@string/song_album"
             android:fontFamily="@font/gotham_book"
+            android:text="@string/song_album"
             android:transitionName="tn_album"
             app:layout_constraintStart_toEndOf="@+id/thumbnail"
             app:layout_constraintTop_toBottomOf="@+id/title" />
@@ -72,11 +73,12 @@
             android:layout_width="37dp"
             android:layout_height="36dp"
             android:layout_marginTop="16dp"
-            android:layout_marginEnd="16dp"
+            android:layout_marginEnd="20dp"
             app:layout_constraintEnd_toEndOf="@+id/container"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/ic_baseline_favorite_24"
-            app:tint="@color/fav_icon_tint" />
+            app:tint="@color/fav_icon_tint"
+            tools:ignore="ContentDescription" />
 
         <TextView
             android:id="@+id/lyric"
@@ -86,13 +88,24 @@
             android:layout_marginTop="50dp"
             android:layout_marginEnd="32dp"
             android:fontFamily="@font/andala_italic"
+            android:lineSpacingExtra="8sp"
             android:text="@string/song_lyric"
             android:textColor="@color/lyric_color"
             android:textSize="16sp"
-            android:lineSpacingExtra="8sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/thumbnail" />
+
+        <ImageView
+            android:id="@+id/share_btn"
+            android:layout_width="33dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintEnd_toEndOf="@+id/container"
+            app:layout_constraintTop_toBottomOf="@+id/favorite"
+            app:srcCompat="@drawable/ic_baseline_share_24"
+            tools:ignore="ContentDescription" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
