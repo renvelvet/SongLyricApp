@@ -46,7 +46,7 @@ class SongLyricActivity : AppCompatActivity(), View.OnClickListener {
             R.id.share_btn -> {
                 val tweet = "Now playing:"
                 val song = dataSong.title.toString()
-                val tweetUrl = ("https://twitter.com/intent/tweet?text=$tweet &url="
+                val tweetUrl = ("https://twitter.com/intent/tweet?text=$tweet&url="
                         + "\"$song\" by Sasha Sloan")
                 val uri: Uri = Uri.parse(tweetUrl)
                 startActivity(Intent(Intent.ACTION_VIEW, uri))
